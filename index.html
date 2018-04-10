@@ -4,9 +4,293 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>crap portfolio</title>
-</head>
-<body>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+  <title>Bootstrap Theme MotoGP</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <nav class="navbar navbar-default navbar-fixed-top navbar-dark bg-dark">
+     <div class="container-fluid">
+       <div class="navbar-header">
+         <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand dark" href="#myPage">MotoGP</a>
+       </div>
+       <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#myPage">Home</a></li>
+            <li><a href="#riders">Riders</a></li>
+            <li><a href="#races">Races & Tickets</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">More
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Extras</a></li>
+                    <li><a href="#">Media</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+          </ul>
+       </div>
+     </div>
+  </nav>
+
+<!-- carousel  -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+  <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="img/carousel-2.jpg" alt="" width="1550" height="700">
+          <div class="carousel-caption">
+            <h3> Quatar track, and shot from race.</h3>
+            <p>The atmosphere is amazing.</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="img/carousel-1.jpg" alt="" width="1550" height="700">
+          <div class="carousel-caption">
+            <h3>Valentino Rossi Pit Lane</h3>
+            <p>Going to he's garage!</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/carousel-3.jpg" alt="" width="1550" height="700">
+          <div class="carousel-caption">
+            <h3>Celebrating victory!</h3>
+            <p>Top three on the podium!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a href="#myCarousel" class="left carousel-control" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a href="#myCarousel" class="right carousel-control" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+</div>
+
+
+<!-- Container (motogp section) -->
+  <div id="riders" class="container text-center">
+    <h3>Moto GP</h3>
+    <p>We love race!</p>
+    <p>We have created a fictional MotoGP website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    <br>
+    <div class="row">
+      <div class="col-sm-4">
+        <p class="text-center"><strong>Valentino Rossi</strong></p><br>
+        <a href="#demo" data-toggle="collapse">
+        <img class="img-circle person" src="img/name-1.jpg" alt="Valentino Rossi" width="255" height="255">
+        </a>
+        <div id="demo" class="collapse">
+          <p>Valentino is an Italian  rofessional MotoGP rider and multiple MotoGP World Champion.<br>
+          <p> Valentino Rossi aka 'The Doctor</p>
+          <p>Member in MotoGp since 1996</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+      <p class="text-center"><strong>Andrea Dovicioso</strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+      <img  class="img-circle person" src="img/name-2.jpg" alt="Andrea Dovicioso" width="255" height="255">
+      </a>
+      <div id="demo2" class="collapse">
+        <p>Andrea Doviziosois a professional motorcycle racer who currently competes in the MotoGP world championship.<br>
+        <p>Andrea aka 'Desmo Dovi'</p>
+        <p>Member in MotoGp since 2006</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Andrea Iannone</strong></p><br>
+      <a href="#demo3" data-toggle="collapse">
+      <img class="img-circle person" src="img/name-3.jpg" alt="Andrea Iannone" width="250" height="250">
+    </a>
+    <div id="demo3" class="collapse">
+      <p>Andrea Iannone is an Italian professional MotoGP rider who currently competes in the MotoGP world championship, for the factory Suzuki team.<br>
+      <p>Andrea aka 'The Maniac'</p>
+      <p>Member in MotoGp since 2008</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="races" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">Races Dates</h3>
+    <p class="text-center">Lorem ipsum we all play you some music.<br /> Rembember to book your tickets!</p>
+
+    <ul class="list-group">
+      <li class="list-group-item">August <span class="label label-danger">Sold Out!</span></li>
+      <li class="list-group-item">June <span class="label label-danger">Sold Out!</span></li>
+      <li class="list-group-item">September <span class="badge">46</span></li>
+      <li class="list-group-item">October <span class="badge">46</span></li>
+      <li class="list-group-item">November <span class="badge">46</span></li>
+    </ul>
+
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img/circ-1.jpg" alt="Misano"  width="400" heihgt="300">
+          <p><strong>Misano</strong></p>
+          <p>Friday 9 September 2018</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img/circ-2.jpg" alt="Misano"  width="400" heihgt="300">
+          <p><strong>Phillip Island</strong></p>
+          <p>Friday 9 October 2018</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="img/circ-3.jpg" alt="Misano"  width="400" heihgt="300">
+          <p><strong>Misano</strong></p>
+          <p>Friday 9 November 2018</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
+      </div>
+      <div class="modal-body">
+        <form role="form">
+          <div class="form-group">
+            <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $98 per person!</label>
+            <input type="number" class="form-control" id="psw" placeholder="How many?">
+          </div>
+          <div class="from-group">
+            <label for="username"><span class="glyphicon glyphicon-user"></span> Send To</label>
+            <input type="text" class="form-control" id="username" placeholder="enter email">
+          </div>
+          <button type="submit" class="btn btn-block">Pay <span class="glyphicon glyphicon-ok"></span></button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+          <span class="glyphicon glyphicon-remove"></span> Cancel
+        </button>
+        <p>Need <a href="#">help?</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Contact container -->
+<div id="contact" class="container">
+ <h3 class="text-center">Contact</h3>
+ <p class="text-center"><em>We love our fans!</em></p>
+ <div class="row test">
+   <div class="col-md-4">
+     <p>Fan? Drop a note.</p>
+     <p><span class="glyphicon glyphicon-map-marker"></span> San Marino, Italy</p>
+     <p><span class="glyphicon glyphicon-phone"></span> Phone: +00 1515151515</p>
+     <p><span class="glyphicon glyphicon-envelope"></span> Email: mail@mail.com</p>
+   </div>
+   <div class="col-md-8">
+     <div class="row">
+       <div class="col-sm-6 form-group">
+         <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+       </div>
+       <div class="col-sm-6 form-group">
+         <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+       </div>
+     </div>
+     <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+     <div class="row">
+       <div class="col-md-12 form-group">
+         <button class="btn pull-right" type="submit">Send</button>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+
+
+
+    <br>
+    <h3 class="text-center">From The Blog</h3>
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#home">Yamaha Team</a></li>
+      <li><a data-toggle="tab" href="#menu1">Ducati Team</a></li>
+      <li><a data-toggle="tab" href="#menu2">Suzuki Team</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <div id="home" class="tab-pane fade in active">
+        <h2>Lin Jarvis, Director at Yamaha</h2>
+        <p>Man, we've been on the road for some time now.
+          Looking forward to lorem ipsum.</p>
+      </div>
+      <div id="menu1" class="tab-pane fade">
+        <h2>Luigi Dall'Igna, Director at Ducati</h2>
+        <p>Was lured over to rival Italian manufacturer Ducati
+          in 2013 to head its Corse</p>
+      </div>
+      <div id="menu2" class="tab-pane fade">
+        <h2>Eiji Mochizuki, Drirector at Suzuki</h2>
+        <p>uzuki will make a comeback to the MotoGP,
+          the world's top motorcycle racing series.</p>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!-- GoogleMaps -->   <div id="googleMap">
+    </div>
+
+
+
+<!-- Footer -->
+ <footer class="text-center">
+  <a href="#myPage" class="up-arrow" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Bootstrap Theme Made By Ivan,  &copy; 2018</p>
+</footer>
+
+
+<script src="main.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGUS7dLbJlQxxMYbTH4wyUiY9On8uSydc&callback=myMap"></script>
 </body>
 </html>
